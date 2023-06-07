@@ -1,0 +1,16 @@
+img.portada-libro {
+    width: 100px;
+}
+
+section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.formulario-pago{
+    background-color: beige;
+}
+
+div.resumen-compra{
+    background-color: lightgrey;
+}
