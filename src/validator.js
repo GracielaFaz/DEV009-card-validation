@@ -1,32 +1,34 @@
 const validator = {
   isValid: function(creditCardNumber){
     const creditCardNumberReverse = creditCardNumber.split("").reverse();
-    console.log(creditCardNumberReverse);
-    let valueSum = 0;
-    let resultado
+    //console.log(creditCardNumberReverse);
+    let valuePair = 0;
+    let valueOdd = 0;
+    let result = 0;
+    
        
     for (let i = 0; i < creditCardNumberReverse.length; i++){
-      let pair = +creditCardNumberReverse[i];
+      let values = parseInt(creditCardNumberReverse[i]);
             
       if((i+1) % 2 === 0){
-        pair *= 2;
-        if(pair > 9){
-          pair -= 9;
+        values *= 2;
+        if(values > 9){
+
+          values -= 9;
         }
-        valueSum += pair; 
+        valuePair += values; 
+      
       } else {
-        valueSum += pair;
-      }
-
-           
-
-      resultado = valueSum % 10 === 0;
-            
+        valueOdd += values;
+      }     
 
     }
 
-    //return resultado;
-    console.log(resultado);
+    const valueSum = valuePair + valueOdd;
+    result = valueSum % 10 === 0;
+
+    return result;
+    //console.log(result);
 
 
 
