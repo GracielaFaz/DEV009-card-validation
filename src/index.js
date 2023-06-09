@@ -4,7 +4,7 @@ const btnValidate = document.getElementById("validate");
 btnValidate.addEventListener("click",function(){
   const creditCardNumber = document.getElementById("inputNumber").value; 
   validator.isValid(creditCardNumber)
-  //validator.maskify(creditCardNumber)
+  validator.maskify(creditCardNumber)
 });
 
 
