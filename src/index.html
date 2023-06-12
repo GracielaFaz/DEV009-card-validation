@@ -2,72 +2,98 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Card Validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Gandhi</h1>
-    </header>
     <main>     
       <section>
-        <div class="formulario-pago">
-          <p>Information &gt; Shipping &gt; Payment</p>
-          <h2>Payment Information</h2>
-          <p>Contact info <span id="payment-info-email"></span></p><br>
-          <p>Method <span id="method"></span></p><br>
+        <div class="right-column">
+          <h1>Gandhi</h1>
+          <p class="steps">Home &gt; <span class="check-out-color">Check out</span></p>
 
-          <input type="text"  placeholder="First Name">
-          <input type="text" placeholder="Second Name"><br>
-          <input type="text" placeholder="Email"><br>
-          <label for="">
-            <input type="checkbox">Email me with news and offers
-          </label><br>
+          <div class="paying-form">
+            <h2>Check Out</h2>
+            <p>Contact info </p>
+            
+            <div class="info">
+              <form action="client-info" class="form-client-info">
+                <div >
+                  <input type="text"  placeholder="First Name">
+                  <input type="text" placeholder="Second Name">
+                </div>
+                <div class="email">
+                  <input type="text" placeholder="Email">
+                </div>
+                <label class="check-box">
+                  <input type="checkbox">Email me with news and offers
+                </label>
+              </form>      
+            </div>
 
-          <label for="standard-shipping">
-            <input type="radio" id="standard-shipping" name="shipping">Standard Shipping (5 - 10 business days)                      $60.00
-          </label><br>
+            
+            <div class="shipping">
+              <p>Shipping Info</p>
+              
 
-          <label for="express-shipping">
-            <input type="radio" id="express-shipping" name="shipping">Express Shipping (2 - 5 business days) $180.00
-          </label><br>
+              <label for="standard-shipping">
+                <input type="radio" id="standard-shipping" name="shipping">Standard Shipping (5 - 10 business days) $60.00
+              </label><br>
+    
+              <label for="express-shipping">
+                <input type="radio" id="express-shipping" name="shipping">Express Shipping (2 - 5 business days) $180.00
+              </label>
+            </div>
 
-          <h4>Payment Method</h4>
-          <input type="text"  placeholder="Card Number VISA/MasterCard" id="inputNumber">
-          <input type="text" placeholder="mm/aa"><br>
-          <input type="text" placeholder="CVV"><br>
-          <button id="validate" >Pay</button>
+  
+            <div class="payment">
+              <p>Payment Method</p>
+              <input type="number"  placeholder="Card Number" id="inputNumber">
+              <input type="month" placeholder="mm/aa"><br>
+              <input class="cvv" type="number" placeholder="CVV"><br>
+              <button id="validate" >Pay</button>
+            </div>
+            
+          </div>
         </div>
 
-
-
-        <div class="resumen-compra">
-          <img class="portada-libro" src="https://sextopiso.mx/mystore/item/601/b/filosofia-felina" alt="filosofia-felina-book">
-          <h3>FILOSOFÍA FELINA. LOS GATOS Y EL SENTIDO DE LA VIDA</h3>
-          <p>Tapa blanda</p>
-          <p>Cantidad: 1</p>
-
+        <div class="shopping-cart-resume">
           <table>
             <tbody>
               <tr>
-                <th>Subtotal</th>
-                <td>$350.00</td>
-              </tr>
-              <tr>
-                <th>Shipping</th>
-                <td><span id="shipping-type"></span></td>
-              </tr>
-              <tr>
-                <th>Total</th>
-                <td><span>MXN</span>$350.00</td>
+                <th> <img class="portada-libro" src="https://sextopiso.mx/mystore/item/601/b/filosofia-felina" alt="filosofia-felina-book"></th>
+                <td>
+                  <h3>FILOSOFÍA FELINA. LOS GATOS Y EL SENTIDO DE LA VIDA</h3>
+                  <p>Tapa blanda</p>
+                  <p>Cantidad: 1</p>
+                </td>
               </tr>
             </tbody>
           </table>
+
+          <div class="resume-table">
+            <table style="width: 100%";>
+              <tbody>
+                <tr>
+                  <th style="width:70%">Subtotal</th>
+                  <td>$350.00</td>
+                </tr>
+                <tr>
+                  <th style="width:70%">Shipping</th>
+                  <td>$60.00</td>
+                </tr>
+                <tr>
+                  <th style="width:70%">Total</th>
+                  <td class="total">$410.00</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
         </div>
-      </section>
-     
+      </section>   
     </main>
-    <footer></footer>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

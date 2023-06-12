@@ -4,8 +4,7 @@ const validator = {
     let valuePair = 0;
     let valueOdd = 0;
     let resultisValid = 0;
-    
-       
+          
     for (let i = 0; i < creditCardNumberReverse.length; i++){
       let values = parseInt(creditCardNumberReverse[i]);
             
@@ -26,9 +25,7 @@ const validator = {
     const valueSum = valuePair + valueOdd;
     resultisValid = valueSum % 10 === 0;
 
-    return resultisValid;
-    
-    
+    return resultisValid;   
   },
 
   maskify: function(creditCardNumber){
@@ -40,8 +37,7 @@ const validator = {
         maskedNumber.push("#");
       } else{
         // Si no, agrega los valores del index al array/constante maskCreditCardNumber
-        unMaskedNumber.push(creditCardNumber[i]);
-          
+        unMaskedNumber.push(creditCardNumber[i]);          
       }
 
     }
@@ -50,11 +46,7 @@ const validator = {
     const resultMaskify = maskedNumber.join("") + unMaskedNumber.join("");
 
     return resultMaskify;
-    
-
   }
-
-
 
 };
 

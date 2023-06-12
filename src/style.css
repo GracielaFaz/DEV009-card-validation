@@ -1,3 +1,98 @@
+:root {
+    --purple: #652498;
+    --blanco: #ffffff;
+    --azul: #099CD8;
+    --amarillo: #FBD000;
+    --tipo-de-letra:'Roboto Condensed', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 46px;
+
+}
+
+span.check-out-color {
+    color: #652498;
+}
+
+.steps {
+    padding: 30px;
+    font-size: 15px;
+}
+
+.paying-form{
+    padding: 10px 60px;
+    margin-top: auto;
+}
+
+.paying-form p {
+    margin-top: 10px;
+}
+
+.form-client-info input[type="text"] {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #652498;
+    border-style: solid;
+    height: 26px;
+    width: 253px;
+}
+
+div.email{
+    margin-top: 6px;
+}
+
+label.check-box {
+    font-size: small;
+    margin-top: 10px;
+}
+
+.payment input{
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #652498;
+    border-style: solid;
+    height: 26px;
+    width: 253px;
+    margin-top: 6px;
+}
+
+
+button {
+    background-color: #652498;
+    font-size: 16px;
+    color: white;
+    width: 106px;
+    height: 31px;
+    margin-left: 455px;
+    margin-top: 45px;
+    border-radius: 5px;
+    border: #652498;
+}
+
+div.shipping {
+    border: #652498;
+    border-radius: 5px;
+}
+
 img.portada-libro {
     width: 100px;
 }
@@ -5,12 +100,31 @@ img.portada-libro {
 section {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    height: vh 100%;
 }
 
 div.formulario-pago{
-    background-color: beige;
+    background-color: white;
 }
 
-div.resumen-compra{
-    background-color: lightgrey;
+.shopping-cart-resume{
+    background-color: #F1ECF5;
+    padding: 96px 60px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+div.resume-table{
+    padding: 60px;
+    margin-top: 26px;
+}
+
+th {
+    text-align: start;
+}
+
+td.total{
+    font-weight: bold;
 }
