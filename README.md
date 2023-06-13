@@ -1,20 +1,30 @@
 # Tarjeta de crédito válida
 
-## Índice
-
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
-* [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Para considerar Project Feedback](#9-para-considerar-project-feedback)
-
-***
-
 ## 1. Preámbulo
+
+El objetivo del proyecto Card Validation fué crear una herramienta con contexto, en la que se pudiera validar y solo dejar ver los ultimos cuatro dígitos de la tarjeta introudcida por el usuario. 
+
+## 2. Herramientas 
+Los lenguajes utilizdos para este propyecto fueron HTML, CSS y JavaScript Vanilla.
+
+## 3. Contexto
+El proyecto atiende a la neceidad del carrito de compras para una libreria llamada Gandhi. Los usuarios en quienes esta pensado son las personas que gustan por la lectura y que hacen compra de los libros online. Se buscó que el diseño de la página fuera visualmente limpia e intuitiva. 
+
+## 4. Prototipos
+
+El primer prototipo en crearse fue el de baja fidelidad, con pluma y papel atendiendo el diseño de un carrito de compras en el que se pueda ver del lado derecho el formulario que se esta llenandno y del lado derecho de la pantalla el resumen del carrito.
+
+
+El segundo prototipo que se creo fue el de alta fidelidad con la herramienta Figma. Se tenía planeado realizar tres vistas en las que el usuario fuera llenando los datos de infomación de contacto, envio y por ultimo el pago en donde se realizaria la validación y enmascarado del número de tarjeta.
+
+https://www.figma.com/file/hiZVhvT12iokJpSwn3MFqR/Card-Validation?type=design&node-id=0%3A1&t=LqJB4qJST9Fe46qp-1
+
+Vista 1 
+![Desktop 1](https://user-images.githubusercontent.com/12631491/217016579-865679e0-0949-4afd-b13f-d2ebba7a0c54.png)
+
+
+
+
 
 El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
 también llamado algoritmo de módulo 10, es un método de suma de verificación,
