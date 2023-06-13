@@ -20,17 +20,21 @@ El segundo prototipo que se creo fue el de alta fidelidad con la herramienta Fig
 https://www.figma.com/file/hiZVhvT12iokJpSwn3MFqR/Card-Validation?type=design&node-id=0%3A1&t=LqJB4qJST9Fe46qp-1
 
 Vista 1 
+
 ![Desktop 1](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/desktop_1.PNG)
 
 Vista 2
+
 ![Desktop 2](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/dektop_2.PNG)
 
 Vista 3
+
 ![Desktop 3](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/desktop_3.PNG)
 
 Por el tiempo se decidió solo hacer una vista con el formulario ya que lo importante de este proyecto era la validación y la función de enmascarar el número de tarjeta.
 
 Resultado final:
+
 ![Resultado](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/desktop_3.PNG)
 
 

@@ -9,6 +9,12 @@
     padding: 0;
 }
 
+section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
 body {
     font-family: 'Inter', sans-serif; 
 }
@@ -81,16 +87,23 @@ button {
     border: #652498;
 }
 
+dialog {
+    border: none;
+    border-radius: 5px;
+    inset: 0;
+    margin: auto;
+  }
+
+div.dialogbox{
+    padding: 20px 20px;
+    text-align: center;
+}
+
 
 img.portada-libro {
     width: 100px;
 }
 
-section {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-}
 
 div.formulario-pago{
     background-color: white;

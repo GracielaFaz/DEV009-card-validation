@@ -32,17 +32,15 @@ const validator = {
     const maskedNumber = [];
     const unMaskedNumber = [];
     for (let i = 0; i < creditCardNumber.length; i++){
-      // Si el index es menor que el index de los últimos cuatro, enmascáralos y agregalos al array/constante maskCreditCardNumber
+
       if(i < creditCardNumber.length - 4){
         maskedNumber.push("#");
       } else{
-        // Si no, agrega los valores del index al array/constante maskCreditCardNumber
         unMaskedNumber.push(creditCardNumber[i]);          
       }
 
     }
-
-    // junta los las dos variables para dar el numero enmascarado. Si creditCardNumber fuera 4556364607935616 el resultado debería de ser ############5616
+    
     const resultMaskify = maskedNumber.join("") + unMaskedNumber.join("");
 
     return resultMaskify;
