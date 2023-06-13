@@ -92,6 +92,7 @@ dialog {
     border-radius: 5px;
     inset: 0;
     margin: auto;
+    max-width: 400px;
   }
 
 div.dialogbox{
