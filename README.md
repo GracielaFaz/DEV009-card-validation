@@ -35,7 +35,7 @@ Por el tiempo se decidió solo hacer una vista con el formulario ya que lo impor
 
 Resultado final:
 
-![Resultado](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/desktop_3.PNG)
+![Resultado](https://github.com/GracielaFaz/DEV009-card-validation/blob/main/assets/card_validation.PNG)
 
 
 
